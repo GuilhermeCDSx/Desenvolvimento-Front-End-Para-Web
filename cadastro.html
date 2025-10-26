@@ -29,12 +29,12 @@
                 <input type="email" id="email" name="email" required><br>
 
                 <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" placeholder="ex.: 000.000.000-00"
+                <input type="text" id="cpf" name="cpf" placeholder="ex.: 123.456.789-00"
                        pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required><br>
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="ex.: 00-00000-0000" required
-                        pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="ex.: (41)91234-1234" required
+                        pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"><br>
 
                 <label for="data_nasc">Data de Nascimento:</label>
                 <input type="date" id="data_nasc" name="data_nasc" required><br>
@@ -43,7 +43,7 @@
                 <input type="text" id="endereco" name="endereco" placeholder="Rua, bairro, número" required><br>
 
                 <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep" placeholder="ex.: 00000-000"
+                <input type="text" id="cep" name="cep" placeholder="ex.: 12345-678"
                         pattern="[0-9]{5}-[0-9]{3}" required><br>
 
                 <label for="cidade">Cidade:</label>
