@@ -2,21 +2,35 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro - Animais Carinhosos</title>
+    <title>CADASTRO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>ANIMAIS CARINHOSOS</h1>
         <nav>
-            <ul>
+            <div class="logo">&#128153; Voluntário</div>
+            <button class="menu-toggle" onclick="toggleMenu()">menu </button>
+            <ul id="navMenu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projeto.html">Projeto</a></li>
+                <li><a href="cadastro.html" class="active">Cadastro</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>  
+    <section class="hero hero-cadastro">
+        <div class="hero-content">
+            <h1>Junte-se a nós como Voluntário!</h1>
+            <p>Preencha o formulário abaixo para se cadastrar e fazer a diferença na vida dos animais.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="signup-section">
+            <div class="succes-message" id="succesMessage">
+                Cadastro realizado com sucesso!
+            </div>
         <form>
             <fieldset>
                 <legend>CADASTRO</legend>
@@ -55,6 +69,7 @@
                 <button type="reset">Limpar</button>
             </fieldset>
         </form>
+        </section>
     </main>
 
     <footer>
