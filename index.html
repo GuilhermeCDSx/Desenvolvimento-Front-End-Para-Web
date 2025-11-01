@@ -6,16 +6,20 @@
     <title>ANIMAIS CARINHOSOS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="pagina-inicial">
     <header>
         <h1>ANIMAIS CARINHOSOS</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">menu </button>
         <nav>
             <ul>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="projeto.html">Projeto</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Quem Somos?</h2>
@@ -25,9 +29,7 @@
                 </h3>
     <picture>
         <source srcset="imagens/cachorro1.webp" type="image/webp">
-        <source srcset="imagens/cachorro2.jpg" type="image/jpg">
-        <source srcset="imagens/cachorro3.png" type="image/png">
-        <img src="imagens/cachorro.jpg" alt="Cachorro" width="800" height="500">
+        <img src="imagens/cachorro1.webp" alt="Cachorro" width="800" height="500">
     </picture>
         </section>
 
@@ -39,20 +41,19 @@
         </section>
 
         <section>
-            <h2>Local e Contato</h2>
-            <h4>
+            <h3>
                 <address>
                     <p>Endereço: Rua Rio Guaporé, 820 - Bairro Boqueirão - Paraná/PR</p>
                     <P>Telefone: (41) 9 1234-1234</P>
                     <p>Email: AnimaisCarinhosos@hotmail.com.br</p>
                 </address>
-            </h4>
+            </h3>
 
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 ONG ANIMAIS CARINHOSOS</p>
+        <p>&copy; ONG ANIMAIS CARINHOSOS</p>
     </footer>
 </body>
 </html>
