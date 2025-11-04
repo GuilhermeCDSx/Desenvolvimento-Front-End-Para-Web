@@ -1,21 +1,26 @@
 :root {
   
   --cor-primaria: #41d1f5;
-  --cor-secundaria: rgb(58, 138, 212);
+  --cor-secundaria: #205281;
   --cor-fundo: #41d1f5;
   --cor-texto: #333;
   --cor-destaque: #2ecc71;
   --cor-erro: #e74c3c;
   --cor-neutra: #bdc3c7;
   --cor-escura: #1a1a1a;
+  --font-pequena: 12px;
+  --font-media: 16px;
+  --font-grande: 24px;
+  --font-extra: 32px;
+
 
   --esp-1: 8px;
   --esp-2: 16px;
   --esp-3: 24px;
   --esp-4: 32px;
 
-  --fonte-principal: 'Arial', sans-serif;
-  --fonte-titulo: 'Verdana', sans-serif;
+  --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
@@ -40,18 +45,20 @@ body.pagina-cadastro {
 header {
   grid-area: header;
   background-color: var(--cor-secundaria);
-  padding: 30px;
+  padding: 10px;
   text-align: center;
+  color: var(--cor-erro);
 }
 
 form {
-  background-color: rgba(0, 136, 199, 0.8);
-  border: 1px solid #ccc;
+  background-color: #031222;
+  border: 1px solid #215483bb;
   border-radius: 10px;
   padding: 20px;
   width: 400px;
   margin: 50px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #A9C8F7;
 }
 
 main, section {
@@ -66,8 +73,10 @@ form input[type="number"] {
   width: 90%;
   padding: 5px;
   margin: 5px 0;
-  border: 1px solid #ffffff;
+  border: 1px solid #113253;
   border-radius: 4px;
+  background-color: #071C32;
+  color: #D6E3FB;
 }
 
 
@@ -101,10 +110,12 @@ footer {
     color: white;
   width: 100%;
     position: relative;
+  font-size: var(--font-pequena);
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: var(--esp-2);
   list-style: none;
@@ -164,4 +175,18 @@ nav ul li ul {
 nav ul li:hover ul {
   display: block;
   opacity: 1;
+}
+
+h3.paragrafo {
+  text-align: center;
+  text-justify: inter-word;
+  margin: 0 auto;
+  font-family: var(--fonte-principal);
+  width: 50%;
+}
+
+.img {
+  border-radius: 9px; 
+  border: 5px solid; 
+  color: white;
 }

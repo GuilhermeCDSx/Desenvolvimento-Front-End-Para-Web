@@ -10,7 +10,7 @@
 <body class="pagina-inicial">
     <header>
         <h1>ANIMAIS CARINHOSOS</h1>
-        <button class="menu-toggle" onclick="toggleMenu()">menu </button>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -23,13 +23,14 @@
     <main>
         <section>
             <h2>Quem Somos?</h2>
-                <h3>
+                <h3 class="paragrafo">
                     <p>Somo uma ONG sem fins lutrativos, onde visamos ajudar animais que foram vítimas de maus-tratos, fazendo esses animais passar por um programa de reestruturação social, onde eles recebem amor, carinho e cuidados veterinários.<br> 
                     Tratamos todos os portes, pequenos, médios e grandes. Caso tenha interesse você também pode ajudar, sendo um voluntário da nossa ONG, por meio do <a href="cadastro.html">Cadastro</a>.</p>
                 </h3>
     <picture>
         <source srcset="imagens/cachorro1.webp" type="image/webp">
-        <img src="imagens/cachorro1.webp" alt="Cachorro" width="800" height="500">
+        <img src="imagens/cachorro1.webp" class="img" alt="Cachorro" width="800" height="500">
+        <!-- <img src="imagens/cachorro1.webp" style="border-radius: 9px; border: 5px solid; color: white;" alt="Cachorro" width="800" height="500"> -->
     </picture>
         </section>
 
@@ -40,6 +41,9 @@
             </h3>
         </section>
 
+    </main>
+
+    <footer>
         <section>
             <h3>
                 <address>
@@ -47,13 +51,9 @@
                     <P>Telefone: (41) 9 1234-1234</P>
                     <p>Email: AnimaisCarinhosos@hotmail.com.br</p>
                 </address>
+            <p>&copy; ONG ANIMAIS CARINHOSOS</p>
             </h3>
-
         </section>
-    </main>
-
-    <footer>
-        <p>&copy; ONG ANIMAIS CARINHOSOS</p>
     </footer>
 </body>
 </html>
