@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body class="pagina-cadastro">
     <header>
-        <h1>ANIMAIS CARINHOSOS</h1>
+        <h1><i class="fa-solid fa-shield-dog"></i> ANIMAIS CARINHOSOS</h1>
         <nav>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul id="navMenu">
@@ -21,9 +22,9 @@
     </header>
 
     <main>
-        <form>
+        <form class="form">
             <fieldset>
-                <legend>CADASTRO</legend>
+                <legend class="legendCadastro">CADASTRO</legend>
                 
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required><br>
@@ -55,8 +56,14 @@
                 <label for="estado">Estado:</label>
                 <input type="text" id="estado" name="estado" required><br>
 
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <div class="button-container">
+                    <button class="Button" type="submit">Enviar</button>
+                    <button class="Button" type="reset">Limpar</button>
+                </div>
+
+                <div class="alert sucesso">Cadastro concluído!</div>
+
+
             </fieldset>
         </form>
     </main>
