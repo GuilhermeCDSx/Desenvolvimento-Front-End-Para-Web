@@ -110,6 +110,7 @@ form input[type="reset"] {
   justify-content: center;
   align-items: center;
   height: 40px;
+  margin-left: 10px;
 }
 
 .button-container {
@@ -148,7 +149,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--esp-2);
+  gap: var(--esp-3);
   list-style: none;
   padding: 0;
 }
@@ -208,18 +209,19 @@ nav ul li:hover ul {
   opacity: 1;
 }
 
-h3.paragrafo {
+.paragrafo {
   text-align: center;
   text-justify: inter-word;
   margin: 0 auto;
   font-family: var(--fonte-principal);
-  width: 50%;
+  width: 70%;
 }
 
 .img {
   border-radius: 9px; 
   border: 5px solid; 
   color: white;
+  margin: center;
 }
 
 html, body {
@@ -229,7 +231,7 @@ html, body {
 }
 
 .menu-toggle {
-  display: flex;
+  display: none;
   margin: auto;
 }
 @media (max-width: 768px) {
