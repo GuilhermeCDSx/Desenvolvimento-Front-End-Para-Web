@@ -19,6 +19,8 @@
   --esp-4: 32px;
 
   --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fonte-secundaria: 'Merriweather', sans, serif, cursive;
+
 }
 
 body {
@@ -30,14 +32,17 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   background-color: var(--cor-fundo);
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-secundaria);
 }
 
-body.pagina-cadastro {
-  background-image: url('../imagens/gato1.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+p.paragrafo {
+  text-align: center;
+  text-justify: inter-word;
+  font-size: 25px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: var(--fonte-secundaria);
+  width: 70%;
 }
 
 header {
@@ -46,6 +51,7 @@ header {
   padding: 10px;
   text-align: center;
   color: white;
+  font-family: var(--fonte-secundaria);
 }
 
 .legendCadastro {
@@ -209,19 +215,12 @@ nav ul li:hover ul {
   opacity: 1;
 }
 
-.paragrafo {
-  text-align: center;
-  text-justify: inter-word;
-  margin: 0 auto;
-  font-family: var(--fonte-principal);
-  width: 70%;
-}
-
 .img {
   border-radius: 9px; 
   border: 5px solid; 
   color: white;
   margin: center;
+
 }
 
 html, body {
