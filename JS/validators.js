@@ -17,6 +17,8 @@ export function validarFormulario() {
     return Boolean(valido);
 }
 
+// ERRO, CASO CAMPO ESTEJA VAZIO
+
 function validarCampoVazio(id, msg) {
     const input = document.getElementById(id);
     if (!input.value.trim()) {
@@ -26,7 +28,7 @@ function validarCampoVazio(id, msg) {
     return true;
 }
 
-//EMAIL
+// EMAIL
 
 function validarEmail() {
     const email = document.getElementById("email");
@@ -50,10 +52,10 @@ function validarCPF() {
         return false;
     }
 
-    return true; // aceita qualquer CPF
+    return true; // ACEITA QUALQUER CPF
 }
 
-
+// TELEFONE
 
 function validarTelefone() {
     const tel = document.getElementById("telefone");
@@ -63,6 +65,8 @@ function validarTelefone() {
     }
     return true;
 }
+
+// CEP
 
 function validarCEP() {
     const cep = document.getElementById("cep");

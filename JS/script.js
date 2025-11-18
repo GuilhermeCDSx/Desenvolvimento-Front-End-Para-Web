@@ -1,5 +1,7 @@
-import { aplicarMascaras, scrollToSection } from "./utils.js";
-import { validarFormulario } from "./validators.js";
+// FUNCIONAMENTO DO SITE
+
+import { aplicarMascaras, scrollToSection } from "../JS/utils.js";
+import { validarFormulario } from "../JS/validators.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     aplicarMascaras();
@@ -26,5 +28,5 @@ import { renderVoluntarios } from "../JS/template.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     aplicarMascaras();
-    renderVoluntarios();  // <-- AQUI
+    renderVoluntarios();
 });

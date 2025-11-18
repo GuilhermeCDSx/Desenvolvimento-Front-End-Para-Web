@@ -1,3 +1,5 @@
+// TEMPLATE SIMPLES DA <SECTION> DE VOLUNTÁRIOS
+
 const voluntarios = [
   { nome: "Marcelo", cidade: "Curitiba" },
   { nome: "Guilherme", cidade: "Colombo" },

@@ -1,3 +1,4 @@
+/*CORES, ESPAÇAMENTOS E FONTES */
 :root {
   --cor-primaria: #41d1f5;
   --cor-secundaria: #205281;
@@ -19,6 +20,7 @@
   --fonte-secundaria: "Merriweather", serif;
 }
 
+/* CORPO */
 html, body {
   margin: 0;
   padding: 0;
@@ -35,7 +37,7 @@ body {
     min-height: 100vh;
 }
 
-
+/* CABEÇALHO */
 header {
   background: #123454;
   color: #B2CEF8;
@@ -56,7 +58,7 @@ header h1 {
   color: #B2CEF8;
 }
 
-
+/* NAVEGAÇÃO */
 nav ul {
   list-style: none;
   padding: 0;
@@ -78,6 +80,7 @@ nav a:hover {
   color: var(--cor-destaque);
 }
 
+/* SEÇÃO */
 section {
   padding: 60px 20px;
   text-align: center;
@@ -89,20 +92,11 @@ section h2 {
   margin-bottom: 20px;
 }
 
-p.paragrafo {
-  max-width: 900px;
-  margin: 0 auto 30px auto;
-  font-size: var(--font-media);
-  line-height: 1.6;
-}
-
 section {
-    scroll-margin-top: 120px; /* evita corte por navbar fixa */
+    scroll-margin-top: 120px; /* EVITA CORTE POR NAVBAR FIXA */
 }
 
-
-
-
+/* FORMULÁRIO */
 form {
   background: #031222;
   border: 1px solid #215483bb;
@@ -113,12 +107,6 @@ form {
   padding: 25px;
   color: #A9C8F7;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-legend {
-  font-size: 22px;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 form label { display: block; margin-top: 10px; }
@@ -133,6 +121,7 @@ form input {
   color: #D6E3FB;
 }
 
+/* ESTILIZAÇÃO DOS BOTÕES */
 .Button {
   border: 1px solid #113253;
   border-radius: 4px;
@@ -178,6 +167,7 @@ form input {
   color: white;
 }
 
+/* RODAPÉ */
 footer {
   background: #123454;
   color: #B2CEF8;
@@ -186,36 +176,32 @@ footer {
   font-size: var(--font-pequena);
 }
 
-@media (max-width: 768px) {
-  nav ul { flex-direction: column; gap: 10px; }
-  header h1 { font-size: 26px; }
-}
-
-/* Telas grandes */
+/* TELAS GRANDES */
 @media (min-width: 1200px) {
   body { font-size: 18px; }
 }
 
-/* Notebooks */
+/* NOTEBOOKS */
 @media (max-width: 1024px) {
   body { font-size: 16px; }
 }
 
-/* Tablets */
+/* TABLETS */
 @media (max-width: 768px) {
   nav ul { flex-direction: column; }
 }
 
-/* Celulares grandes */
+/* CELULARES GRANDES */
 @media (max-width: 480px) {
   h1 { font-size: 20px; }
 }
 
-/* Celulares pequenos */
+/* CELULARES PEQUENOS */
 @media (max-width: 360px) {
   h1 { font-size: 18px; }
 }
 
+/* TEXTO DO LADO DAS IMAGENS */
 .conteudo-lado {
     flex-direction: row-reverse;
     display: flex;
@@ -224,7 +210,7 @@ footer {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* EVITA QUEBRAR EM TELAS PEQUENAS */
 }
 
 .conteudo-lado .texto {

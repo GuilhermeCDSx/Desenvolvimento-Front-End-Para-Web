@@ -1,3 +1,5 @@
+// PREENCHIMENTO AUTOMÁTICO DO CADASTRO
+
 export function aplicarMascaras() {
     const cpf = document.getElementById("cpf");
     const tel = document.getElementById("telefone");
@@ -7,6 +9,8 @@ export function aplicarMascaras() {
     if (tel) tel.addEventListener("input", mascaraTelefone);
     if (cep) cep.addEventListener("input", mascaraCEP);
 }
+
+// CPF
 
 function mascaraCPF(e) {
     let v = e.target.value.replace(/\D/g, "");
@@ -20,6 +24,8 @@ function mascaraCPF(e) {
     e.target.value = v;
 }
 
+// TELEFONE
+
 function mascaraTelefone(e) {
     let v = e.target.value.replace(/\D/g, "");
 
@@ -31,6 +37,8 @@ function mascaraTelefone(e) {
     e.target.value = v;
 }
 
+// CEP
+
 function mascaraCEP(e) {
     let v = e.target.value.replace(/\D/g, "");
 
@@ -40,6 +48,8 @@ function mascaraCEP(e) {
 
     e.target.value = v;
 }
+
+// SCROLL DA PÁGINA
 
 export function scrollToSection(id) {
     const el = document.getElementById(id);
