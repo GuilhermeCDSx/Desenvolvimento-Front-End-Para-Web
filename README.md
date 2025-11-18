@@ -36,9 +36,9 @@ COMO EXECUTAR O PROJETO:
 Repositório Principal: 
 
     https://github.com/GuilhermeCDSx/Desenvolvimento-Front-End-Para-Web
-    
+
 Repositórios Auxiliares (Experiências Práticas):
 
-1°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-I
-2°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-II
-3°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-III
+    1°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-I
+    2°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-II
+    3°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-III
