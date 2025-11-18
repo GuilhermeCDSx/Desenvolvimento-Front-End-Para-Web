@@ -1,19 +1,57 @@
-export function mostrarAlerta(msg, tipo = "erro") {
-    const alerta = document.querySelector("#alerta");
-    alerta.style.display = "block";
-    alerta.textContent = msg;
+export function aplicarMascaras() {
+    const cpf = document.getElementById("cpf");
+    const tel = document.getElementById("telefone");
+    const cep = document.getElementById("cep");
 
-    alerta.className = "alert " + tipo;
+    if (cpf) cpf.addEventListener("input", mascaraCPF);
+    if (tel) tel.addEventListener("input", mascaraTelefone);
+    if (cep) cep.addEventListener("input", mascaraCEP);
 }
 
-export function validarCPF(cpf) {
-    return /^[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}$/.test(cpf);
+function mascaraCPF(e) {
+    let v = e.target.value.replace(/\D/g, "");
+
+    if (v.length > 11) v = v.slice(0, 11);
+
+    v = v.replace(/(\d{3})(\d)/, "$1.$2");
+    v = v.replace(/(\d{3})(\d)/, "$1.$2");
+    v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+
+    e.target.value = v;
 }
 
-export function validarTelefone(telefone) {
-    return /^\(\d{2}\)\s?\d{4,5}-\d{4}$/.test(telefone);
+function mascaraTelefone(e) {
+    let v = e.target.value.replace(/\D/g, "");
+
+    if (v.length > 11) v = v.slice(0, 11);
+
+    v = v.replace(/(\d{2})(\d)/, "($1) $2");
+    v = v.replace(/(\d{5})(\d)/, "$1-$2");
+
+    e.target.value = v;
 }
 
-export function validarCEP(cep) {
-    return /^[0-9]{5}-[0-9]{3}$/.test(cep);
+function mascaraCEP(e) {
+    let v = e.target.value.replace(/\D/g, "");
+
+    if (v.length > 8) v = v.slice(0, 8);
+
+    v = v.replace(/(\d{5})(\d)/, "$1-$2");
+
+    e.target.value = v;
+}
+
+export function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const navbar = document.querySelector("header");
+    const offset = navbar ? navbar.offsetHeight + 20 : 80;
+
+    const top = el.offsetTop - offset;
+
+    window.scrollTo({
+        top,
+        behavior: "smooth"
+    });
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animais Carinhosos - ONG</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="../JS/script.js" defer></script>
+    <script type="module" src="../JS/utils.js" defer></script>
+    <script type="module" src="../JS/validators.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1><i class="fa-solid fa-shield-dog"></i> ANIMAIS CARINHOSOS</h1></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projeto">Projeto</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="section-inicio">
+
+                <div class="conteudo-lado">
+                    <div class="texto">
+                        <h2>Quem Somos?</h2>
+                        <p class="paragrafo-inicio">
+                            Somos uma ONG sem fins lucrativos que ajuda animais vítimas de maus-tratos. Trabalhamos para resgatar, cuidar e preparar esses animais para uma nova vida com amor e respeito, contando com a doação individual dos nossos apoiadores.
+                             Nosso objetivo é resgatar, tratar e transformar vidas — oferecer acolhimento, cuidados e reabilitação a animais vítimas de maus-tratos, promover educação e consciência social para prevenir crueldade, e incentivar adoções
+                             responsáveis que garantam a cada ser um lar com dignidade, respeito e amor duradouros. 
+                        </p>
+                    </div>
+
+                    <picture>
+                        <img src="../IMAGENS/golden1.webp" alt="Cachorrinho" class="img-inicial" width="800" height="500">
+                    </picture>
+                </div>
+        </section>
+
+        <section id="projeto" class="section-projeto">
+
+                <div class="conteudo-lado">
+                    <div class="texto">
+                        <h2>Projeto</h2>
+                        <p class="paragrafo-projeto">
+                                Nossa missão é acolher, tratar e reabilitar todos os animais em situação de vulnerabilidade, independentemente de seu porte ou condição. Para viabilizar esse trabalho, dependemos de doações e do apoio da comunidade; contudo,
+                                 reconhecemos que nem todos têm possibilidade de contribuir financeiramente. Em razão disso, instituímos um Cadastro de Voluntários, por meio do qual podemos identificar, contatar e integrar pessoas dispostas a colaborar com
+                                 seu tempo, competências e dedicação. Os voluntários selecionados receberão orientações e capacitação adequadas, de forma a garantir um atendimento responsável e seguro aos animais, bem como transparência e organização nas atividades
+                                 desenvolvidas. Agradecemos antecipadamente a solidariedade de todos que desejam somar esforços à nossa causa.
+                            </p>
+                    </div>
+
+                    <picture>
+                        <img src="../IMAGENS/gato1.webp" class="img-projeto" alt="Cachorro" width="800" height="500">
+                    </picture>
+                </div>
+        </section>
+
+        <section id="cadastro" class="section cadastro">
+            <h2>Cadastro de Voluntário</h2>
+            <form id="formVoluntario" class="form-box">
+                <label>Nome Completo:</label>
+                <input type="text" id="nome" required />
+
+                <label>E-mail:</label>
+                <input type="email" id="email" required />
+
+                <label>CPF:</label>
+                <input type="text" id="cpf" required />
+
+                <label>Telefone:</label>
+                <input type="text" id="telefone" required />
+
+                <label>Data de Nascimento:</label>
+                <input type="date" id="nascimento" required />
+
+                <label>Endereço:</label>
+                <input type="text" id="endereco" required />
+
+                <label>CEP:</label>
+                <input type="text" id="cep" required />
+
+                <label>Cidade:</label>
+                <input type="text" id="cidade" required />
+
+                <label>Estado:</label>
+                <input type="text" id="estado" required />
+
+            <div class="button-container">
+                <button class="Button" type="submit">Enviar</button>
+                <button class="Button" type="reset">Limpar</button>
+            </div>
+            </form>
+            <p id="msgErro" class="erro"></p>
+        </section>
+    </main>
+
+    <section id="voluntarios" class="section">
+        <h2>Voluntário em Destaque</h2>
+        <div id="cardsVoluntarios"></div>
+
+    </section>
+
+    <footer>
+        <p>Endereço: Rua Rio Guaporé, 820 - Bairro Boqueirão - Paraná/PR</p>
+        <p>Telefone: (41) 9 1234-1234</p>
+        <p>Email: AnimaisCarinhosos@hotmail.com.br</p>
+        <p>© ONG ANIMAIS CARINHOSOS</p>
+    </footer>
+</body>
+</html>

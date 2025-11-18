@@ -1,36 +1,30 @@
-import { homeTemplate, projetoTemplate, cadastroTemplate } from "./templates.js";
-import { configurarFormulario } from "./cadastro.js";
+import { aplicarMascaras, scrollToSection } from "./utils.js";
+import { validarFormulario } from "./validators.js";
 
-const app = document.querySelector("#app");
+document.addEventListener("DOMContentLoaded", () => {
+    aplicarMascaras();
+});
 
-/* ---------------- SPA ---------------- */
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const id = e.target.getAttribute("href").replace("#", "");
+        scrollToSection(id);
+    });
+});
 
-export function navegar(pagina) {
-    if (pagina === "home") {
-        app.innerHTML = homeTemplate;
-        return;
+document.getElementById("formVoluntario").addEventListener("submit", e => {
+    e.preventDefault();
+
+    if (validarFormulario()) {
+        alert("Cadastro enviado com sucesso!");
+        e.target.reset();
     }
+});
 
-    if (pagina === "projeto") {
-        app.innerHTML = projetoTemplate;
-        return;
-    }
+import { renderVoluntarios } from "../JS/template.js";
 
-    if (pagina === "cadastro") {
-        app.innerHTML = cadastroTemplate;
-        configurarFormulario();
-        return;
-    }
-}
-
-/* torna a função acessível no HTML */
-window.navegar = navegar;
-
-/* Carrega página inicial assim que abre o site */
-navegar("home");
-
-/* ---------------- MENU MOBILE ---------------- */
-window.toggleMenu = function() {
-    const menu = document.querySelector("#navMenu");
-    menu.classList.toggle("ativo");
-};
+document.addEventListener("DOMContentLoaded", () => {
+    aplicarMascaras();
+    renderVoluntarios();  // <-- AQUI
+});
