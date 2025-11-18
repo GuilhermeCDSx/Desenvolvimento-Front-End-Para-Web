@@ -4,25 +4,25 @@ Este repositório contém o projeto desenvolvido para a disciplina Desenvolvimen
 
 Tecnologias Utilizadas:
 
-    HTML5 – Estrutura semântica e acessível
+- HTML5 – Estrutura semântica e acessível
 
-    CSS3 – Estilização responsiva e suporte a alto contraste
+- CSS3 – Estilização responsiva e suporte a alto contraste
 
-    JavaScript – Funcionalidades interativas e suporte à navegação por teclado
+- JavaScript – Funcionalidades interativas e suporte à navegação por teclado
 
 Acessibilidade (WCAG 2.1 AA)
 
-    Navegação completa por teclado em todos os componentes
+- Navegação completa por teclado em todos os componentes
 
-    Uso correto de tags semânticas HTML
+- Uso correto de tags semânticas HTML
 
 Otimização para Produção
 
-    Minificação de arquivos CSS, JavaScript e HTML
+- Minificação de arquivos CSS, JavaScript e HTML
 
-    Compressão e otimização de imagens
+- Compressão e otimização de imagens
 
-COMO EXECUTAR O PROJETO:
+Como executar o projeto:
 
     git clone https://github.com/GuilhermeCDSx/Desenvolvimento-Front-End-Para-Web
     cd Desenvolvimento-Front-End-Para-Web   
