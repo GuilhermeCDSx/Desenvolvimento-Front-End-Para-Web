@@ -16,12 +16,6 @@ Acessibilidade (WCAG 2.1 AA)
 
     Uso correto de tags semânticas HTML
 
-    Contraste mínimo de 4.5:1 para textos
-
-    Suporte para leitores de tela
-
-    Implementação de modo alto contraste e modo escuro acessível
-
 Otimização para Produção
 
     Minificação de arquivos CSS, JavaScript e HTML
@@ -31,14 +25,14 @@ Otimização para Produção
 COMO EXECUTAR O PROJETO:
 
     git clone https://github.com/GuilhermeCDSx/Desenvolvimento-Front-End-Para-Web
-    cd Desenvolvimento-Front-End-Para-Web
+    cd Desenvolvimento-Front-End-Para-Web   
 
 Repositório Principal: 
 
-    https://github.com/GuilhermeCDSx/Desenvolvimento-Front-End-Para-Web
+- [Desenvolvimento-Front-End-Para-Web](https://github.com/GuilhermeCDSx/Desenvolvimento-Front-End-Para-Web)
 
 Repositórios Auxiliares (Experiências Práticas):
 
-    1°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-I
-    2°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-II
-    3°: https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-III
+- [Entrega-da-Experiencia-Pratica-I](https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-I)
+- [Entrega-da-Experiencia-Pratica-II](https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-II)
+- [Entrega-da-Experiencia-Pratica-III](https://github.com/GuilhermeCDSx/Entrega-da-Experiencia-Pratica-III)
