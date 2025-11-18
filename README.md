@@ -25,7 +25,9 @@ Otimização para Produção
 Como executar o projeto:
 
     git clone https://github.com/GuilhermeCDSx/Desenvolvimento-Front-End-Para-Web
-    cd Desenvolvimento-Front-End-Para-Web   
+    cd Desenvolvimento-Front-End-Para-Web
+
+[Deploy](https://prismatic-tiramisu-03b539.netlify.app/)
 
 Repositório Principal: 
 
